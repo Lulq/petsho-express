@@ -17,22 +17,22 @@ const petshop = {
     listaPets: () => {
     // lista todos os pets cadastrados.
     
-    console.log("Estes são os pets cadastrados:")
+        console.log("Estes são os pets cadastrados:")
 
-    bd.pets.forEach(pet => {
-        let {nome, tipo, raca, tutor} = pet
-        
-        console.log(`Pet: ${nome}, Tipo: ${tipo}, Raça ${raca}, Tutor: ${tutor}`)
-        
-         
-        pet.servicos.forEach( servicosDoPet => {
-            let {servico, data} = servicosDoPet;
-            console.log(`Serviço: ${servico}, Data/Hora: ${data}`)
-        })      
-    })
+        bd.pets.forEach(pet => {
+            let {nome, tipo, raca, tutor} = pet
+
+            console.log(`Pet: ${nome}, Tipo: ${tipo}, Raça ${raca}, Tutor: ${tutor}`)
+
+
+            pet.servicos.forEach( servicosDoPet => {
+                let {servico, data} = servicosDoPet;
+                console.log(`Serviço: ${servico}, Data/Hora: ${data}`)
+            })      
+        })
     },
 
-    const buscarPet: PetBuscado => {  
+    buscarPet: PetBuscado => {  
         let encontrado = bd.pets.find(function(pet){
            return pet.nome === PetBuscado;
         });
@@ -50,7 +50,7 @@ const petshop = {
         
     },
     
-    const filtrarTipoPet : tipoPet => {
+    filtrarTipoPet : tipoPet => {
     
         let filtrados = bd.pets.filter(pet => pet.tipo === tipoPet);
         
@@ -61,7 +61,7 @@ const petshop = {
         })
         
     },
-    const vacinarPet: pet => {
+    vacinarPet: pet => {
         // checa se um pet já se encontra vacinado e em caso negativo o vacina.
         if (!pet.vacinado){
             pet.vacinado = true;
@@ -72,7 +72,7 @@ const petshop = {
         }
     
     },
-    const campanhaVacina: (pets) => { 
+    campanhaVacina: (pets) => { 
         console.log('Campanha de vacina 2021')
         console.log('vacinando...')
     
@@ -94,7 +94,7 @@ const petshop = {
         console.log(`Pets vacinados nesta campanha campanha: ${petVacinadosCampanha}`);
         },
         
-        const adicionarPet: (nome, tipo, idade, raca, peso, tutor, contato, vacinado, servicos) =>{
+        adicionarPet: (nome, tipo, idade, raca, peso, tutor, contato, vacinado, servicos) =>{
 
             novoPet = {
                 nome: nome,
@@ -114,7 +114,8 @@ const petshop = {
         console.log(`${novoPet.nome} foi adicionado com sucesso!`)
         
     },
-    const darBanhoPet: (pet) => {
+    
+    darBanhoPet: (pet) => {
     
         pet.servicos.push({
             servico: "banho",
@@ -125,7 +126,7 @@ const petshop = {
         
     },
 
-    const tosarPet: (pet) => {
+    tosarPet: (pet) => {
         
         pet.servicos.push({
             servico: "tosa",
@@ -136,7 +137,7 @@ const petshop = {
         
     },          
     
-    const apararUnhasPet: (pet) => {
+    apararUnhasPet: (pet) => {
         
         pet.servicos.push({
             servico: "aparar unhas",
@@ -147,13 +148,13 @@ const petshop = {
         
     },
     
-    const atenderCliente: (pet, servico) => {
+    atenderCliente: (pet, servico) => {
         console.log(`Bem vindo, ${pet.nome}!`);
         servico(pet);
         console.log(`Até logo, ${pet.nome}!`)
     },
     
-    const clientePremium: pet => {
+    clientePremium: pet => {
     
         let {nome} = pet
     
@@ -164,7 +165,7 @@ const petshop = {
     },
         
     
-    const contatoTutor: pet => {
+    contatoTutor: pet => {
         let {nome, tutor, contato} = pet;
     
         return `Tutor: ${tutor}
@@ -173,7 +174,7 @@ const petshop = {
         
     },
           
-    const filtrarTutor: nomeTutor => {
+    filtrarTutor: nomeTutor => {
         let petsTutor = bd.pets.filter(pet =>{
             return pet.tutor == nomeTutor;
         });
