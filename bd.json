@@ -1,0 +1,97 @@
+{
+  "pets": [
+    {
+      "nome": "Siegfried",
+      "tipo": "cachorro",
+      "idade": 7,
+      "raca": "Doberman",
+      "peso": 30,
+      "tutor": "Luiz",
+      "contato": "0819999-9999",
+      "vacinado": true,
+      "servicos": [
+        {
+          "servico": "banho",
+          "data": "03/29/2021 - 11:46:40 AM"
+        }
+      ]
+    },
+    {
+      "nome": "Saori",
+      "tipo": "cachorro",
+      "idade": 3,
+      "raca": "Pastor Belga",
+      "peso": 25,
+      "tutor": "Marcos",
+      "contato": "0819999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Iron",
+      "tipo": "cachorro",
+      "idade": 5,
+      "raca": "Pastor Belga",
+      "peso": 30,
+      "tutor": "Joaquim",
+      "contato": "0819999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Herbert",
+      "tipo": "cachorro",
+      "idade": 28,
+      "raca": "Miniatura Pinscher, 50% ódio, 50% tremedeira",
+      "peso": 65,
+      "tutor": "João",
+      "contato": "0819999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Diego",
+      "tipo": "Divindade",
+      "idade": 33,
+      "raca": "Cristo",
+      "peso": 555,
+      "tutor": "Deus",
+      "contato": "0819999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Gabriel",
+      "tipo": "Cachorrinho feadapta",
+      "idade": 15,
+      "raca": "chihuaha",
+      "peso": 2,
+      "tutor": "Melyssa",
+      "contato": "0819999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Nabo",
+      "tipo": "Cachorro",
+      "idade": 15,
+      "raca": "chihuaha",
+      "peso": 2,
+      "tutor": "Nereu",
+      "contato": "0819999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Saturno",
+      "tipo": "unicórnio",
+      "idade": 12,
+      "raca": "farolês",
+      "peso": 600,
+      "tutor": "Luiz",
+      "contato": "0819999-9999",
+      "vacinado": true,
+      "servicos": []
+    }
+  ]
+}
